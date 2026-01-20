@@ -23,30 +23,23 @@ const projects = [
   {
     title: 'MOSDAC AI Assistant ',
     description: 'Drag-and-drop portfolio builder with custom themes and SEO optimization features.',
-    tech: ['Vue.js', 'Tailwind', 'Firebase'],
+    tech: ['JavaScript', 'Tailwind', 'Firebase'],
     github: 'https://github.com/arpitgovil/ISRO-CHATBOT',
     live: 'https://isro-chatbot.vercel.app/',
   },
   {
-    title: 'Task Management App',
-    description: 'Collaborative task management tool with real-time updates and analytics dashboard.',
-    tech: ['React', 'Redux', 'Express', 'PostgreSQL'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: 'Namo Bharat Website',
+    description: 'This project is a user-friendly web interface designed to simplify access to information about the Regional Rapid Transit System (RRTS), developed under (NCRTC). It provides comprehensive details on routes, schedules, ticketing, and real-time updates for commuters.',
+    tech: ['React', 'Tailwind', 'JavaScript', 'TypeScript'],
+    github: 'https://github.com/arpitgovil/RRTS',
+    live: 'https://arpitgovil.github.io/RRTS/',
   },
   {
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather dashboard with 7-day forecast and interactive maps.',
-    tech: ['React', 'D3.js', 'OpenWeather API'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
-  {
-    title: 'Social Media Analytics',
-    description: 'Analytics platform for tracking social media engagement and growth metrics.',
-    tech: ['Python', 'Django', 'React', 'Chart.js'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+    title: 'Smart India Hackathon Portal',
+    description: 'This project is a fully functional web-based replica of the Smart India Hackathon (SIH), designed to digitally manage the complete hackathon workflow from college onboarding to idea submission and administrative approval.',
+    tech: ['React', 'PostgreSQL', 'TypeScript', 'Taiwlind'],
+    github: 'https://github.com/arpitgovil/SIH',
+    live: 'https://arpitgovil.github.io/SIH/',
   },
 ];
 
@@ -124,11 +117,28 @@ const ProjectsSection = () => {
               className="glass-card p-6 group hover:bg-[hsl(0_0%_100%/0.05)] transition-all duration-500"
             >
               {/* Project number */}
-              <span className="text-6xl font-syne font-bold text-muted/50 absolute -top-2 -right-2 group-hover:text-muted/80 transition-colors">
-                {String(index + 1).padStart(2, '0')}
-              </span>
+              <span
+  className="
+    absolute -top-2 -right-2
+    font-syne font-bold text-6xl
+    text-white/30
+    group-hover:text-white
+    transition-colors duration-300
+  "
+>
+  {String(index + 1).padStart(2, '0')}
+</span>
 
-              <h3 className="font-syne text-xl font-bold text-translucent mb-3 relative z-10">
+              <h3
+  className="
+    font-syne text-xl font-bold
+    text-translucent
+    group-hover:text-foreground
+    group-hover:[text-shadow:0_0_0.5px_currentColor]
+    mb-3 relative z-10
+    transition-all duration-300
+  "
+>
                 {project.title}
               </h3>
               <p className="text-muted-translucent mb-4 text-sm relative z-10">
